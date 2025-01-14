@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MY WEBSITE</title>
+    <meta name="description" content="Country Factfile - Explore countries around the world.">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <style>
+        /* Ensuring the background image fits the screen */
+        body {
+            background-image: url('');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+
+        h1, h2 {text-align: center; margin: 20px 0;}
+
+        h1 {font-size: 3em; font-weight: bold;}
+
+        h2 {font-size: 2em;}
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 20px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        p {text-align: center; font-size: 18px;}
+
+        form input[type="text"],
+        form input[type="password"],
+        form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .login-text {font-size: 18px; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+    <h1>My Website</h1>
+
+    <div class="container">
+        <p><strong></strong></p>
+        <h1>Welcome</h1>
+
+        <h2>Create an account</h2>
+        
+        <form id="createAccountForm" action="redirection.html" method="post">
+        <input type="text" name="username" placeholder="Enter your name" required>
+            <input type="password" name="password" placeholder="Enter a password" required>
+            <input type="submit" value="Create an account">
+            <form action="redirection.html" method="post"></form>
+        </form>
+
+        <form id="guestForm">
+            <input type="submit" value="Continue as Guest">
+        </form>
+
+        <p class="login-text">A few steps away from jumping right in.</p>
+
+    </div>
+
+</body>
+</html>
+
+
